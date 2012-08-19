@@ -1,0 +1,13 @@
+{
+  "name": "AutoScroll",
+  "version": "0.2.0",
+  "author": "Robin Willis",
+  "description": "jQuery plugin to scroll overflowing elements based on mouse position",
+  "homepage": "http://www.robincwillis.com/AutoScroll/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/robincwillis/AutoScroll.git"
+  },
+  "dependencies": {
+  }
+}

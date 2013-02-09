@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AutoScroll Example</title>
+  
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="../src/jquery.autoScroll.0.2.0.js"></script>
+    
+     <script type="text/javascript">
+      $(document).ready(function(){
+		 //Slide 
+		$('#list').autoScroll({entry:'.entry'});	
+	});
+    </script>
+    
+	<style type="text/css">
+
+		#list{
+			width:200px;
+			height:400px;
+			overflow:hidden;
+		}
+
+		.entry{
+			width:200px;
+			height:199px;
+			margin-bottom:0px;
+			border-bottom:1px solid #000;
+		}
+		
+		.blue{background:blue;}
+		
+		.red{background:red;}
+		
+		.green{background:green;}
+		
+	</style>
+
+</head>
+  <body>
+    <div id="list">
+		<div class="entry red"></div>
+		<div class="entry blue"></div>
+		<div class="entry green"></div>
+		<div class="entry red"></div> 
+	</div>
+	
+
+  </body>
+</html>
+
+

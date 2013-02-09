@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>AutoScroll, a Navigation JQuery Plugin</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="src/jquery.autoScroll.0.2.0.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="css/autoscroll.css"></link>
+				
+		<script type="text/javascript">
+			
+			$(document).ready(function(){
+				$('#demo_scroll').autoScroll({entry:'.entry'});
+			});
+			
+		</script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4803873-2']);
+      _gaq.push(['_setDomainName', '.robincwillis.com']);
+      _gaq.push(['_trackPageview','/AutoScroll']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+
+	</head>
+			
+	<body>
+
+
+		<div id="container">
+			<div id="header">
+			<!-- Demo Header -->	
+			<div id="demo_scroll">
+				<div class="entry" id="a">A</div>
+				<div class="entry" id="b">B</div>
+				<div class="entry" id="c">C</div>
+	 			<div class="entry" id="d">D</div>
+				<div class="entry" id="e">E</div>
+				<div class="entry" id="a">F</div>
+				<div class="entry" id="b">G</div>
+				<div class="entry" id="c">H</div>
+				<div class="entry" id="d">I</div>
+				<div class="entry" id="e">J</div>
+			</div>	
+		</div>
+		
+		<div id="content">
+		<h1>AutoScroll</h1>
+		<h2>A JQuery plugin to scroll overflowing elements based on mouse position.</h2>
+		<!-- Description -->
+		<div id="description">
+		
+		<h3>Description</h3>
+
+
+		
+		<p>
+AutoScroll is an incredibly small and simple JQuery plugin that allows overflowing elements with lists scrollable based on the vertical mouse position within that element. One simply needs to attach the plugin to the container element and pass it a JQuery selector for its child list elements.
+		</p>	
+
+<h3>Further Developments</h3>
+<ul>
+<li>Option to scroll horizontally as well as vertically</li>
+<li>Option to set a buffer to tweak scrolling behavior</li>
+</ul>
+		</div>
+		</div>
+		<div id="menu">
+		Version Beta 0.1.0<br/>
+		
+		Updated January 27th, 2011<br/>
+		
+		Have questions or find a bug? Open an Issue on <a href="https://github.com/robincwillis/AutoScroll/issues" target="_blank">GitHub</a><br/>
+		
+		
+		
+		
+		<a class="button" href="src/jquery.autoScroll.0.2.0.js" target="_blank">Download</a>	
+		<!-- Download Link -->
+		<a class="button" href="example/index.html" target="_blank">Demo</a>
+		<!-- Demo Link -->
+		<a class="button" href="https://github.com/robincwillis/AutoScroll" target="_blank">Source</a>	
+		<!-- Contact Link -->
+		
+		
+		</div>
+		<div style="clear:both"></div>
+		<!-- Pre-HTML -->
+		<div id="code_html">
+		<h2>HTML</h2>
+		<pre>
+	&lt;div id="demo_scroll"&gt;
+		&lt;div class="entry" &gt;&lt;/div&gt;
+		&lt;div class="entry" &gt;&lt;/div&gt;
+		&lt;div class="entry" &gt;&lt;/div&gt;
+	&lt;/div&gt;</pre>			
+		</div>
+		<!-- Pre-CSS -->
+		<div id="code_css">
+		<h2>CSS</h2>
+		<pre>
+	#demo_scroll{
+		height:400px;
+		width:250px;
+		overflow:hidden;
+	}
+			
+	.entry{
+		height:100px;
+		width:250px;
+	}</pre>
+		</div>
+		<!-- Pre-Jquery -->
+		<div id="code_jquery">
+		<h2>JAVASCRIPT</h2>
+			<pre>
+	$(document).ready(function(){
+		$('#demo_scroll').autoScroll('.entry');
+	});</pre>
+		</div>
+
+
+		<div id="footer">
+			
+			Check out my other JQuery Plugins and Projects at <a href="http://code.robincwillis.com" target="_blank">code.robincwillis.com</a>
+			or in touch with me on <a href="https://twitter.com/#!/robincwillis" target="_blank">Twitter</a>.
+		</div>
+		
+		</div>
+	</body>
+</html>

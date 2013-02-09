@@ -51,10 +51,6 @@
 			$(this).mousemove(function(e){
 				methods.scroll.call(this,e);
 			});
-
-			$(window).resize(function(){
-				methods.update.call(this);
-			});
 			
 			});
 		},
@@ -123,10 +119,24 @@
 		update : function (){
 			var  data = $(this).data('settings');
 			
-			data.elHeight 				= data.el.height();
-			data.entryHeight  			= parseFloat(data.entry.outerHeight(true));
-			data.listHeight				= data.entry.length * data.entry.height();
+			data.elHeight = data.el.height();
+			var listHeight = 0;
+
+			for(var i=0;i<data.entry.length;i++){
+				//if($(data.entry[i]).is(':visible')){
+				if(!$(data.entry[i]).hasClass('filtered')){
+				
+					var entryHeight = $(data.entry[i]).outerHeight(true);
+					
+					listHeight += 140// entryHeight;	
+
+				}
+				
+			}
+			
+			data.listHeight = listHeight+100;
 			data.totalScrollDistance	= data.listHeight - data.elHeight;
+
 		},
 
 		destroy : function () {
@@ -150,7 +160,7 @@
     } else if ( typeof method === 'object' || ! method ) {
       return methods.init.apply( this, arguments );
     } else {
-      $.error( 'Method ' +  method + ' does not exist on jQuery.tooltip' );
+      $.error( 'Method ' +  method + ' does not exist on jQuery.autoScroll' );
     }    
   
   };

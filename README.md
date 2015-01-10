@@ -16,9 +16,9 @@ AutoScroll is an incredibly small and simple JQuery plugin that allows overflowi
 *	Option to scroll horizontally as well as vertically
 *	Option to set a buffer to tweak scrolling behavior
 
-###Example
+###Project Page
 
-[AutoScroll](http://www.robincwillis.com/AutoScroll/example "Example")
+[AutoScroll](http://robincwillis.github.io/AutoScroll/ "Project Page")
 
 ###HTML
 
@@ -35,7 +35,7 @@ AutoScroll is an incredibly small and simple JQuery plugin that allows overflowi
 		width:250px;
 		overflow:hidden;
 	}
-			
+
 	.entry{
 		height:100px;
 		width:250px;
